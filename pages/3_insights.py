@@ -51,16 +51,20 @@ predicted_churn_percentage = df['churn_prediction_rf'].mean() * 100 if 'churn_pr
 revenue_at_risk = df[df['churn_prediction_xgb'] == 1]['monthly_revenue'].sum() if 'churn_prediction_xgb' in df.columns and 'monthly_revenue' in df.columns else 0
 
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("Active Users", f"{active_users}")
-col2.metric("Churn % (XGBoost)", f"{churn_percentage:.2f}%")
-col3.metric("Predicted Churn % (Random Forest)", f"{predicted_churn_percentage:.2f}%")
-col4.metric("Revenue at Risk", f"${revenue_at_risk:,.2f}")
+with col1:
+    st.markdown("""<div class='metric-card'>📈<div class='metric-value'>{}</div><div class='metric-label'>Active Users</div></div>""".format(active_users), unsafe_allow_html=True)
+with col2:
+    st.markdown("""<div class='metric-card'>⚠️<div class='metric-value'>{:.2f}%</div><div class='metric-label'>Churn % (XGBoost)</div></div>""".format(churn_percentage), unsafe_allow_html=True)
+with col3:
+    st.markdown("""<div class='metric-card'>🔮<div class='metric-value'>{:.2f}%</div><div class='metric-label'>Predicted Churn % (RF)</div></div>""".format(predicted_churn_percentage), unsafe_allow_html=True)
+with col4:
+    st.markdown("""<div class='metric-card'>💰<div class='metric-value'>${:,.2f}</div><div class='metric-label'>Revenue at Risk</div></div>""".format(revenue_at_risk), unsafe_allow_html=True)
 
 # Placeholder for Breakdowns
-st.subheader("Churn Breakdowns")
+st.subheader("📊 Churn Breakdowns")
 
 # Churn probability by plan type
-st.write("### Churn Probability by Plan Type")
+st.write("### ⚙️ Churn Probability by Plan Type")
 if 'plan_type' in df.columns and 'churn_prediction_xgb' in df.columns:
     churn_by_plan = df.groupby('plan_type')['churn_prediction_xgb'].mean().reset_index()
     churn_by_plan['churn_probability'] = churn_by_plan['churn_prediction_xgb'] * 100
@@ -70,7 +74,7 @@ else:
     st.info("'plan_type' or 'churn_prediction_xgb' column not found in data for this breakdown.")
 
 # Feature adoption vs churn risk
-st.write("### Feature Adoption vs Churn Risk")
+st.write("### 🧩 Feature Adoption vs Churn Risk")
 if 'active_features_used' in df.columns and 'churn_prediction_xgb' in df.columns:
     churn_by_features = df.groupby('active_features_used')['churn_prediction_xgb'].mean().reset_index()
     churn_by_features['churn_probability'] = churn_by_features['churn_prediction_xgb'] * 100
@@ -80,7 +84,7 @@ else:
     st.info("'active_features_used' or 'churn_prediction_xgb' column not found in data for this breakdown.")
 
 # Top 10 churn drivers (SHAP output)
-st.write("### Top 10 Churn Drivers (SHAP Output)")
+st.write("### 🏆 Top 10 Churn Drivers (SHAP Output)")
 if xgb_model and 'original_df' in st.session_state:
     # Assuming 'original_df' in session_state is the preprocessed dataframe used for prediction
     shap_df = st.session_state['original_df'].copy()
@@ -137,7 +141,7 @@ else:
     st.info("XGBoost model or original data not available for SHAP analysis. Please ensure predictions are made.")
 
 # Cohort chart: Retention trend by signup month
-st.write("### Cohort Chart: Retention Trend by Signup Month")
+st.write("### 📈 Cohort Chart: Retention Trend by Signup Month")
 if 'signup_date' in st.session_state['original_df'].columns and 'churn_prediction_xgb' in df.columns:
     cohort_df = st.session_state['original_df'].copy()
     cohort_df['signup_date'] = pd.to_datetime(cohort_df['signup_date'])

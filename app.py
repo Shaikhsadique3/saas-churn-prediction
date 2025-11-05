@@ -1,4 +1,5 @@
 import streamlit as st
+from ui_helper import apply_custom_styles, top_bar
 
 st.set_page_config(
     page_title="Churn Prediction App",
@@ -40,6 +41,21 @@ st.markdown(
     ---
     **Developed by:** Sadique Shaikh  
     **GitHub:** [github.com/Shaikhsadique3](https://github.com/Shaikhsadique3)  
-    **LinkedIn:** [linkedin.com/in/shaikhsadique](https://linkedin.com/in/shaikhsadique)  
+    **LinkedIn:** [linkedin.com/in/shaikhsadique](https://www.linkedin.com/in/shaikh-sadique-131341356?)  
     """
 )
+
+apply_custom_styles()
+
+top_bar()
+
+st.subheader("Key Metrics")
+col1,col2,col3,col4=st.columns(4)
+with col1:
+    st.markdown("<div class='metric-card'>📈<div class='metric-value'>1.2K</div><div class='metric-label'>Total Users</div></div>",unsafe_allow_html=True)
+with col2:
+    st.markdown("<div class='metric-card'>💰<div class='metric-value'>$42K</div><div class='metric-label'>MRR</div></div>",unsafe_allow_html=True)
+with col3:
+    st.markdown("<div class='metric-card'>⚠️<div class='metric-value'>5.4%</div><div class='metric-label'>Churn Rate</div></div>",unsafe_allow_html=True)
+with col4:
+    st.markdown("<div class='metric-card'>⭐<div class='metric-value'>68</div><div class='metric-label'>NPS</div></div>",unsafe_allow_html=True)

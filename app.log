@@ -247,3 +247,53 @@ payment_status_On-time       bool
 dtype: object
 2025-11-05 12:53:49,328 - INFO - Models loaded successfully.
 2025-11-05 13:05:17,187 - INFO - Models loaded successfully.
+2025-11-05 13:20:39,705 - INFO - Models loaded successfully.
+2025-11-05 13:26:15,752 - INFO - Models loaded successfully.
+2025-11-05 13:30:22,478 - INFO - Models loaded successfully.
+2025-11-05 13:34:51,359 - INFO - Models loaded successfully.
+2025-11-05 13:34:59,971 - INFO - Predictions made and displayed.
+2025-11-05 13:35:00,287 - INFO - Feature importances displayed.
+2025-11-05 13:35:08,485 - INFO - Data types of X before SHAP: monthly_revenue             int64
+days_since_signup           int64
+last_login_days_ago         int64
+logins_last30days           int64
+active_features_used        int64
+tickets_opened              int64
+NPS_score                   int64
+signup_date               float64
+plan_type_Enterprise        int64
+plan_type_Free               bool
+plan_type_Pro               int64
+payment_status_Late         int64
+payment_status_On-time       bool
+dtype: object
+2025-11-05 13:35:46,151 - INFO - Predictions made and displayed.
+2025-11-05 13:35:46,179 - INFO - Feature importances displayed.
+2025-11-05 13:35:51,502 - INFO - Data types of X before SHAP: monthly_revenue             int64
+days_since_signup           int64
+last_login_days_ago         int64
+logins_last30days           int64
+active_features_used        int64
+tickets_opened              int64
+NPS_score                   int64
+signup_date               float64
+plan_type_Enterprise        int64
+plan_type_Free               bool
+plan_type_Pro               int64
+payment_status_Late         int64
+payment_status_On-time       bool
+dtype: object
+2025-11-05 13:36:41,804 - INFO - Data types of X before SHAP: monthly_revenue             int64
+days_since_signup           int64
+last_login_days_ago         int64
+logins_last30days           int64
+active_features_used        int64
+tickets_opened              int64
+NPS_score                   int64
+signup_date               float64
+plan_type_Enterprise        int64
+plan_type_Free               bool
+plan_type_Pro               int64
+payment_status_Late         int64
+payment_status_On-time       bool
+dtype: object
