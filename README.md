@@ -103,6 +103,45 @@ Customer Data → Streamlit Frontend → Render API → ML Models (XGBoost, RF)
 
 
 
+## 📈 Graphs Explained
+
+### 1. Churn Probability by Plan Type
+![Churn by Plan](images/churn_by_plan.png)
+- **X-Axis:** Plan type (Free, Basic, Pro …)
+- **Y-Axis:** Churn probability (%)
+- **What It Shows:** Compares churn likelihood across different subscription tiers.
+- **Business Benefit:** Highlights which plans need retention initiatives or pricing tweaks.
+
+### 2. Feature Adoption vs Churn Risk
+![Churn vs Features](images/churn_by_features.png)
+- **X-Axis:** Number of active features used
+- **Y-Axis:** Churn probability (%)
+- **What It Shows:** Relationship between product engagement (feature usage) and churn.
+- **Business Benefit:** Reveals under-used features and upsell or education opportunities.
+
+### 3. Cohort Retention by Signup Month
+![Cohort Retention](images/cohort_retention.png)
+- **X-Axis:** Signup month
+- **Y-Axis:** Retention (%)
+- **What It Shows:** Retention trend over time for user cohorts.
+- **Business Benefit:** Detects seasonal issues and measures impact of experiments or campaigns.
+
+### 4. Top 10 Churn Drivers (SHAP)
+![Top SHAP Drivers](images/top_shap_drivers.png)
+- **X-Axis:** Features (ranked by importance)
+- **Y-Axis:** Importance score (mean |SHAP|)
+- **What It Shows:** Variables that most influence the churn model’s predictions.
+- **Business Benefit:** Focuses roadmap and marketing efforts on high-impact factors.
+
+> Replace the **images/*.png** placeholders with real screenshots of your dashboard charts for a richer README.
+
+
+---
+
+## 🧱 File Structure
+
+
+
 📂 saas-churn-prediction-dashboard
 ┣ 📂 models
 ┃ ┣ churnaizer_model.pkl
