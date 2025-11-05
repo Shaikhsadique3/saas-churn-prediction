@@ -13,6 +13,13 @@ def apply_custom_styles():
     .stApp {
         background: #FFFFFF;
     }
+    /* Hide Streamlit header and footer */
+    .stApp header {
+        display: none !important;
+    }
+    .stApp footer {
+        display: none !important;
+    }
     /* --- Main area card look --- */
     .main > div {
         background: #ffffff;
@@ -22,12 +29,13 @@ def apply_custom_styles():
         min-height: 100vh;
     }
     /* --- Sidebar --- */
-    section[data-testid=\"stSidebar\"] > div:first-child {
+    section[data-testid="stSidebar"] > div:first-child {
         background-color: #FFFFFF;
         padding: 1.5rem 1rem;
         box-shadow: 2px 0 6px rgba(0,0,0,0.05);
+        transition: margin-left .3s, box-shadow .3s;
     }
-    section[data-testid=\"stSidebar\"] label, section[data-testid=\"stSidebar\"] p {
+    section[data-testid="stSidebar"] label, section[data-testid="stSidebar"] p {
         color: #000000;
     }
     /* Sidebar header */
@@ -40,6 +48,31 @@ def apply_custom_styles():
         align-items: center;
         gap: 0.5rem;
     }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+        .stApp {
+            padding-top: 0;
+        }
+        .main > div {
+            padding: 1rem;
+        }
+        section[data-testid="stSidebar"] {
+            margin-left: -100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            z-index: 999;
+        }
+        section[data-testid="stSidebar"].css-1d3f8as {
+            margin-left: 0;
+        }
+        .sidebar-logo {
+            margin-bottom: 1rem;
+        }
+    }
+
     /* Metric card */
     .metric-card {
         background: #ffffff;

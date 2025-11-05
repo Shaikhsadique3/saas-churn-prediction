@@ -76,7 +76,7 @@ with st.expander("See details of each visualization"):
 
     # --- 2. Feature Adoption vs Churn Risk ---
     st.markdown("### 2. Feature Adoption vs Churn Risk")
-    st.image("images/churn_by_features.png", use_column_width=True)
+    st.image("images/churn_by_features.png", use_container_width=True)
     st.markdown(
         """
 **X-Axis:** Number of active features used  
@@ -88,7 +88,7 @@ with st.expander("See details of each visualization"):
 
     # --- 3. Cohort Retention by Signup Month ---
     st.markdown("### 3. Cohort Retention by Signup Month")
-    st.image("images/cohort_retention.png", use_column_width=True)
+    st.image("images/cohort_retention.png", use_container_width=True)
     st.markdown(
         """
 **X-Axis:** Signup month  
@@ -100,7 +100,7 @@ with st.expander("See details of each visualization"):
 
     # --- 4. Top 10 Churn Drivers (SHAP) ---
     st.markdown("### 4. Top 10 Churn Drivers (SHAP)")
-    st.image("images/top_shap_drivers.png", use_column_width=True)
+    st.image("images/top_shap_drivers.png", use_container_width=True)
     st.markdown(
         """
 **X-Axis:** Features (ranked by importance)  
