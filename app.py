@@ -41,7 +41,8 @@ st.markdown(
     ---
     **Developed by:** Sadique Shaikh  
     **GitHub:** [github.com/Shaikhsadique3](https://github.com/Shaikhsadique3)  
-    **LinkedIn:** [linkedin.com/in/shaikhsadique](https://www.linkedin.com/in/shaikh-sadique-131341356?)  
+    **X (Twitter):** [x.com/Shaikh_Sadique3](https://x.com/Shaikh_Sadique3)  
+    **LinkedIn:** [linkedin.com/in/shaikh-sadique-131341356](https://www.linkedin.com/in/shaikh-sadique-131341356)  
     """
 )
 

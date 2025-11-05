@@ -198,9 +198,11 @@ Keep requirements.txt synced with model environment versions.
 
 🏁 Author
 
-👤 Sd Sad
+👤 Shaikh Sadique
 Data Analyst & ML Developer
-📧 founder@churnaizer.com / shaikhsadique2222@gmail.com
+📧 founder@churnaizer.com / shaikhsadique2222@gmail.com 
+🔗 [X (Twitter)](https://x.com/Shaikh_Sadique3)
+🔗 [LinkedIn](https://www.linkedin.com/in/shaikh-sadique-131341356)
 
 🔗 https://churnaizer.streamlit.app/predict
 
