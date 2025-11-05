@@ -8,7 +8,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.title("Welcome to the Churn Prediction Dashboard!")
+st.title("🧠 Welcome to Churnaizer")
+st.write("Your all-in-one churn prediction and retention analytics system for SaaS businesses.")
+st.write("This dashboard turns customer data into actionable insights — helping founders reduce churn, improve retention, and protect recurring revenue.")
 st.write("Please select a page from the sidebar to get started.")
 
 st.sidebar.success("Select a page above.")

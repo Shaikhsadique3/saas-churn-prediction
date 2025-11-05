@@ -334,3 +334,22 @@ dtype: object
 2025-11-05 17:22:58,778 - INFO - Models loaded successfully.
 2025-11-05 17:23:56,608 - INFO - Models loaded successfully.
 2025-11-05 17:42:57,754 - INFO - Models loaded successfully.
+2025-11-05 19:25:19,870 - INFO - Models loaded successfully.
+2025-11-05 19:50:48,712 - INFO - Models loaded successfully.
+2025-11-05 19:50:57,621 - INFO - Predictions made and displayed.
+2025-11-05 19:50:57,980 - INFO - Feature importances displayed.
+2025-11-05 19:51:03,905 - INFO - Data types of X before SHAP: monthly_revenue             int64
+days_since_signup           int64
+last_login_days_ago         int64
+logins_last30days           int64
+active_features_used        int64
+tickets_opened              int64
+NPS_score                   int64
+signup_date               float64
+plan_type_Enterprise        int64
+plan_type_Free               bool
+plan_type_Pro               int64
+payment_status_Late          bool
+payment_status_On-time       bool
+dtype: object
+2025-11-05 20:16:58,693 - INFO - Models loaded successfully.
