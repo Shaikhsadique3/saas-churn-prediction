@@ -333,3 +333,4 @@ payment_status_On-time       bool
 dtype: object
 2025-11-05 17:22:58,778 - INFO - Models loaded successfully.
 2025-11-05 17:23:56,608 - INFO - Models loaded successfully.
+2025-11-05 17:42:57,754 - INFO - Models loaded successfully.
