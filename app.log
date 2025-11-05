@@ -297,3 +297,39 @@ plan_type_Pro               int64
 payment_status_Late         int64
 payment_status_On-time       bool
 dtype: object
+2025-11-05 16:17:58,455 - INFO - Models loaded successfully.
+2025-11-05 16:19:00,867 - INFO - Models loaded successfully.
+2025-11-05 16:23:47,248 - INFO - Models loaded successfully.
+2025-11-05 17:01:43,938 - INFO - Models loaded successfully.
+2025-11-05 17:01:54,542 - INFO - Predictions made and displayed.
+2025-11-05 17:01:54,889 - INFO - Feature importances displayed.
+2025-11-05 17:02:17,758 - INFO - Data types of X before SHAP: monthly_revenue             int64
+days_since_signup           int64
+last_login_days_ago         int64
+logins_last30days           int64
+active_features_used        int64
+tickets_opened              int64
+NPS_score                   int64
+signup_date               float64
+plan_type_Enterprise        int64
+plan_type_Free               bool
+plan_type_Pro               int64
+payment_status_Late          bool
+payment_status_On-time       bool
+dtype: object
+2025-11-05 17:03:09,794 - INFO - Data types of X before SHAP: monthly_revenue             int64
+days_since_signup           int64
+last_login_days_ago         int64
+logins_last30days           int64
+active_features_used        int64
+tickets_opened              int64
+NPS_score                   int64
+signup_date               float64
+plan_type_Enterprise        int64
+plan_type_Free               bool
+plan_type_Pro               int64
+payment_status_Late          bool
+payment_status_On-time       bool
+dtype: object
+2025-11-05 17:22:58,778 - INFO - Models loaded successfully.
+2025-11-05 17:23:56,608 - INFO - Models loaded successfully.
