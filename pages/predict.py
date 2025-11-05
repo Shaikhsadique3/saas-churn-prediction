@@ -1,4 +1,15 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="Predict Churn",
+    page_icon=":chart_with_upwards_trend:",
+    layout="wide"
+)
+
+st.title("Predict Customer Churn")
+st.write("Upload your customer data to get churn predictions.")
+
+# Add your prediction logic here.import streamlit as st
 import pandas as pd
 import joblib
 import logging

@@ -245,3 +245,5 @@ plan_type_Pro               int64
 payment_status_Late         int64
 payment_status_On-time       bool
 dtype: object
+2025-11-05 12:53:49,328 - INFO - Models loaded successfully.
+2025-11-05 13:05:17,187 - INFO - Models loaded successfully.
