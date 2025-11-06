@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("🧠 Welcome to Churnaizer")
 st.write("Your all-in-one churn prediction and retention analytics system for SaaS businesses.")
 st.write("This dashboard turns customer data into actionable insights — helping founders reduce churn, improve retention, and protect recurring revenue.")
-st.write("Please select a page from the sidebar to get started.")
+
 
 st.sidebar.success("Select a page above.")
 
@@ -34,7 +34,7 @@ st.markdown(
     """
     This dashboard helps you predict customer churn and gain valuable insights.
 
-    **👈 Select a page from the sidebar** to get started.
+    
 
     ### What's inside?
     - **Insights:** Explore key churn metrics, trends, and performance indicators.
