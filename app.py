@@ -22,10 +22,9 @@ st.markdown(
     **👈 Select a page from the sidebar** to get started.
 
     ### What's inside?
-    - **Home:** Overview and introduction to the app.
-    - **Predict:** Upload your customer data to get churn predictions.
-    - **Insights:** Explore visualizations and key performance indicators related to churn.
-    - **Business Recommendations:** Get actionable recommendations based on churn risk.
+    - **Insights:** Explore key churn metrics, trends, and performance indicators.
+    - **Recommendations:** Discover actionable retention strategies based on churn segments.
+    - **Predict:** Upload your own data to simulate churn risk and revenue impact.
 
     ---
 
