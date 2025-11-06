@@ -61,15 +61,7 @@ st.markdown(
     """
 )
 
-st.markdown(
-    """
-    ---
-    **Developed by:** Sadique Shaikh  
-    **GitHub:** [github.com/Shaikhsadique3](https://github.com/Shaikhsadique3)  
-    **X (Twitter):** [x.com/Shaikh_Sadique3](https://x.com/Shaikh_Sadique3)  
-    **LinkedIn:** [linkedin.com/in/shaikh-sadique-131341356](https://www.linkedin.com/in/shaikh-sadique-131341356)  
-    """
-)
+
 
 st.subheader("Graphs Explained")
 with st.expander("See details of each visualization"):
@@ -84,6 +76,20 @@ with st.expander("See details of each visualization"):
 **Business Benefit:** Highlights which plans need retention initiatives or pricing tweaks.
         """
     )
+
+    st.markdown(
+        """
+        <div style="text-align: center; font-size: small;">
+            © 2025 Churnaizer | Built by Sadique Shaikh  
+            <br>
+            <a href="https://github.com/Shaikhsadique3" target="_blank">🔗 GitHub</a> | 
+            <a href="https://www.linkedin.com/in/shaikh-sadique-131341356" target="_blank">LinkedIn</a> | 
+            <a href="https://x.com/Shaikh_Sadique3" target="_blank">X (Twitter)</a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 
     # --- 2. Feature Adoption vs Churn Risk ---
     st.markdown("### 2. Feature Adoption vs Churn Risk")
