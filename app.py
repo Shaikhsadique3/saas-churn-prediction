@@ -15,6 +15,21 @@ st.write("Please select a page from the sidebar to get started.")
 
 st.sidebar.success("Select a page above.")
 
+apply_custom_styles()
+
+top_bar()
+
+st.subheader("Key Metrics")
+col1,col2,col3,col4=st.columns(4)
+with col1:
+    st.markdown("<div class='metric-card'>📈<div class='metric-value'>1.2K</div><div class='metric-label'>Total Users</div></div>",unsafe_allow_html=True)
+with col2:
+    st.markdown("<div class='metric-card'>💰<div class='metric-value'>$42K</div><div class='metric-label'>MRR</div></div>",unsafe_allow_html=True)
+with col3:
+    st.markdown("<div class='metric-card'>⚠️<div class='metric-value'>5.4%</div><div class='metric-label'>Churn Rate</div></div>",unsafe_allow_html=True)
+with col4:
+    st.markdown("<div class='metric-card'>⭐<div class='metric-value'>68</div><div class='metric-label'>NPS</div></div>",unsafe_allow_html=True)
+
 st.markdown(
     """
     This dashboard helps you predict customer churn and gain valuable insights.
@@ -46,21 +61,6 @@ st.markdown(
     **LinkedIn:** [linkedin.com/in/shaikh-sadique-131341356](https://www.linkedin.com/in/shaikh-sadique-131341356)  
     """
 )
-
-apply_custom_styles()
-
-top_bar()
-
-st.subheader("Key Metrics")
-col1,col2,col3,col4=st.columns(4)
-with col1:
-    st.markdown("<div class='metric-card'>📈<div class='metric-value'>1.2K</div><div class='metric-label'>Total Users</div></div>",unsafe_allow_html=True)
-with col2:
-    st.markdown("<div class='metric-card'>💰<div class='metric-value'>$42K</div><div class='metric-label'>MRR</div></div>",unsafe_allow_html=True)
-with col3:
-    st.markdown("<div class='metric-card'>⚠️<div class='metric-value'>5.4%</div><div class='metric-label'>Churn Rate</div></div>",unsafe_allow_html=True)
-with col4:
-    st.markdown("<div class='metric-card'>⭐<div class='metric-value'>68</div><div class='metric-label'>NPS</div></div>",unsafe_allow_html=True)
 
 st.subheader("Graphs Explained")
 with st.expander("See details of each visualization"):
