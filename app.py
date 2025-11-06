@@ -54,6 +54,15 @@ st.markdown(
 
 st.markdown(
     """
+    🚀 Impact Highlight  
+    • 91% prediction accuracy (AUC 0.89, F1 0.83)  
+    • $42K MRR analyzed  
+    • Actionable retention insights for SaaS decision-makers
+    """
+)
+
+st.markdown(
+    """
     ---
     **Developed by:** Sadique Shaikh  
     **GitHub:** [github.com/Shaikhsadique3](https://github.com/Shaikhsadique3)  
